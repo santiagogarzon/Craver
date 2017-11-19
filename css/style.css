@@ -807,6 +807,8 @@ a.brand:focus{
   position: fixed;
   box-shadow: 0 0 25px rgba(0,0,0,0.07);
   border-bottom: 0.1rem #ec8a4d solid;
+  padding-top: 1.7rem !important;
+  height: 5rem !important;
 }
 
 
