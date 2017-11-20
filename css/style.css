@@ -740,6 +740,13 @@ a.brand:focus{
   margin-top: 0.6rem; 
 }
 
+@media (max-width: 600px){
+  .brand-text{
+    display: none; 
+  }
+} 
+
+
 .navbar-toggle{
   display: block;
   margin:0;
@@ -1814,6 +1821,8 @@ a.brand:focus{
 .navbar-2 .brand-text{
   color:#fff;
 }
+
+
 
 .navbar-2 .navbar-address{
   float: left;
