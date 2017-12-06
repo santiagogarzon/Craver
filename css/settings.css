@@ -1208,7 +1208,7 @@ img.tp-slider-alternative-image	{
 
 .tp-bullet 						{	width:2rem;height:0.416rem; position:absolute; background:#fff;  cursor: pointer; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
 .tp-bullet.selected,
-.tp-bullet:hover				{	background:rgb(226, 134, 76);}
+.tp-bullet:hover				{	background:rgb(240, 125, 0);}
 
 .tp-bannertimer					{	background:#000; background:rgba(0,0,0,0.15); height:5px;}
 

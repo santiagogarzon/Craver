@@ -117,12 +117,13 @@ html{
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato';
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.025em;
   line-height: 2.1428;
-  color: #7e7e7e;
+  /* color: #7e7e7e; */
+  color: #a5a5a5;
   background: #272727;
   -webkit-overflow-scrolling:touch;
 }
@@ -135,21 +136,21 @@ body{
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
 }
 
 ::selection{
-  background-color:rgb(226, 134, 76);
+  background-color:rgb(240, 125, 0);
   color:#fff;
 }
 
 -webkit-::selection{
-    background-color:rgb(226, 134, 76);
+    background-color:rgb(240, 125, 0);
     color:#fff;
 }
 
 ::-moz-selection{
-    background-color:rgb(226, 134, 76);
+    background-color:rgb(240, 125, 0);
     color:#fff;
 }
 
@@ -276,7 +277,7 @@ blockquote{
   padding: 0;
   width: 80%;
   padding-left: 6.8rem;
-  border-left: 0.3rem solid rgb(226, 134, 76);
+  border-left: 0.3rem solid rgb(240, 125, 0);
   margin-top: 5rem;
   color:#fff;
 }
@@ -302,7 +303,7 @@ cite{
 }
 
 a {
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
   -webkit-transition: color .3s ease-out;
        -o-transition: color .3s ease-out;
           transition: color .3s ease-out;
@@ -310,7 +311,7 @@ a {
 
 a:hover,
 a:focus {
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
   outline: none;
 }
 
@@ -368,7 +369,7 @@ input[type='email']:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 textarea:focus{
-  border-color: rgb(226, 134, 76);
+  border-color: rgb(240, 125, 0);
   outline: 0;
 }
 
@@ -414,7 +415,7 @@ textarea::-webkit-input-placeholder {
 }
 
 input.error{
-  border-color: rgb(226, 134, 76);
+  border-color: rgb(240, 125, 0);
 }
 
 .mc-label,
@@ -446,7 +447,7 @@ label.error{
 
 .btn:hover,
 .btn:focus{
-  background-color:rgb(226, 134, 76);
+  background-color:rgb(240, 125, 0);
   color: #fff;
   -webkit-box-shadow:none;
   box-shadow: none;
@@ -460,7 +461,7 @@ label.error{
 
 
 .btn-yellow{
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
   color: #000;
 }
 
@@ -522,7 +523,7 @@ label.error{
 
 .link-arrow:hover,
 .link-arrow-2:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
   text-decoration:none;
 }
 
@@ -578,7 +579,7 @@ label.error{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgb(226, 134, 76);
+  background-color: rgb(240, 125, 0);
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -626,7 +627,7 @@ label.error{
 }
 
 .text-primary{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 .masked{
@@ -711,7 +712,7 @@ a.brand:focus{
   display: inline-block;
   vertical-align: top;
   margin-right: 0.65rem;
-  height: 2.356rem;
+  height: 3.1rem;
 }
 
 
@@ -740,19 +741,53 @@ a.brand:focus{
   margin-top: 0.6rem; 
 }
 
-@media (max-width: 600px){
-  .brand-text{
-    display: none; 
-  }
-} 
-
-
 .navbar-toggle{
-  display: block;
+  display: none;
   margin:0;
   padding: 0;
   border-radius: 0;
 }
+
+@media (max-width: 990px){
+  .brand-text{
+    display: none; 
+  }
+
+  .navbar-toggle{
+    display: block !important;
+    margin:0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .social-list {
+    display: none;
+  }
+
+} 
+
+@media (max-width: 1228px){
+ .navbar-address{
+   font-size: 0.8em;
+   margin-left: 8px !important;
+ }
+ .navbar-link{
+   font-size: 0.8em;
+   margin-left: 10px !important;
+ }
+
+
+}
+
+@media (max-width: 1110px){
+ 
+    
+ }
+ 
+
+
+
+
 
 .navbar-toggle .icon-bar{
   background-color: #fff;
@@ -762,12 +797,12 @@ a.brand:focus{
 }
 
 .navbar-toggle:hover .icon-bar{
-  background-color:  rgb(226, 134, 76);
+  background-color:  rgb(240, 125, 0);
 }
 
 .navbar .social-list{
   float: right;
-  margin-right: 10%;
+  margin-right: 0%;
 }
 
 .social-list{
@@ -787,13 +822,13 @@ a.brand:focus{
 }
 
 .social-list a:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
   text-decoration: none;
 }
 
 .navbar-spacer{
   float: right;
-  margin:-1rem 4.5rem 0;
+  margin:-1rem 3rem 0;
   width: 1px;
   height: 3.3rem;
   background-color: #3c3c3c;
@@ -803,6 +838,15 @@ a.brand:focus{
   float: right;
   font-weight: 600;
   text-transform: uppercase;
+  margin-left: 18px;
+  color: white;
+}
+
+.navbar-link {
+  float: right;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 22px;
 }
 
 
@@ -864,7 +908,7 @@ a.brand:focus{
 }
 
 .close-menu:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 .menu .menu-lang{
@@ -895,7 +939,7 @@ a.brand:focus{
 
 .menu-lang .active,
 .menu-lang a:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
   text-decoration: none;
 }
 
@@ -991,7 +1035,7 @@ a.brand:focus{
 }
 
 .menu-footer .social-list a:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
 }
 
 .menu-footer .copy{
@@ -1079,6 +1123,21 @@ a.brand:focus{
   padding:10.28rem 0;
 }
 
+.section-rrhh{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.section-rrhh2{
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+}
+
+
+.section-service {
+  padding: 4.28rem 0;
+}
+
 .section-title{
   margin:0;
 }
@@ -1093,8 +1152,16 @@ a.brand:focus{
   font-size: 1.142rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
   margin-bottom: 1rem;
+}
+
+.text-home {
+  font-size: 1.1rem;
+}
+
+.link-construir {
+  font-size: 1.5rem;
 }
 
 
@@ -1121,7 +1188,7 @@ a.brand:focus{
 }
 
 .rev_slider .link-arrow:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
 }
 
 .rev_slider .link-arrow:hover .icon{
@@ -1157,7 +1224,7 @@ a.brand:focus{
 
 .slider-prev:hover,
 .slider-next:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
 }
 
 
@@ -1197,20 +1264,20 @@ a.brand:focus{
 .experience-box{
   position: relative;
   white-space:nowrap;
-  margin:6rem 0;
+  margin:4rem 0;
 }
 
 
 
 @media (min-width: 992px){
   .experience-box{
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 }
 
 @media (min-width: 1200px){
   .experience-box{
-    margin-top: 12.2rem;
+    margin-top: 4.2rem;
   }
 }
 
@@ -1219,14 +1286,14 @@ a.brand:focus{
   vertical-align: middle;
   width: 12.15rem;
   height: 12.15rem;
-  border:0.357rem solid rgb(226, 134, 76);
+  border:0.357rem solid rgb(240, 125, 0);
 }
 
 .experience-content{
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  left: -8rem;
+  left: -9rem;
   top:0.2rem;
 }
 
@@ -1287,7 +1354,7 @@ a.brand:focus{
 
 .filter li a:hover,
 .filter .active a{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
   text-decoration: none;
 }
 
@@ -1311,7 +1378,7 @@ a.brand:focus{
 
 .view-projects:hover{
   text-decoration: none;
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 
@@ -1360,7 +1427,7 @@ a.brand:focus{
 
 .owl-prev:hover,
 .owl-next:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 .owl-dots{
@@ -1382,7 +1449,7 @@ a.brand:focus{
 }
 
 .owl-dot.active span{
-  background-color: rgb(226, 134, 76);
+  background-color: rgb(240, 125, 0);
 }
 
 .project-item{
@@ -1459,7 +1526,7 @@ a.brand:focus{
 }
 
 .project-item:hover .project-hover{
-  background-color: rgb(226, 134, 76);
+  background-color: rgb(240, 125, 0);
 }
 
 .project-item:hover .project-hover .project-title{
@@ -1632,7 +1699,7 @@ a.brand:focus{
 .hover-border div::before {
   position: absolute;
   content: "";
-  background:rgb(226, 134, 76);
+  background:rgb(240, 125, 0);
   height: 2px;
   width: 100%;
   left: 0;
@@ -1649,7 +1716,7 @@ a.brand:focus{
 .hover-border::after {
   position: absolute;
   content: "";
-  background:rgb(226, 134, 76);
+  background:rgb(240, 125, 0);
   width: 2px;
   height: 100%;
   right: 0;
@@ -1666,7 +1733,7 @@ a.brand:focus{
 .hover-border div::after {
   position: absolute;
   content: "";
-  background:rgb(226, 134, 76);
+  background:rgb(240, 125, 0);
   width: 100%;
   height: 2px;
   right: 0;
@@ -1683,7 +1750,7 @@ a.brand:focus{
 .hover-border::before {
   position: absolute;
   content: "";
-  background:rgb(226, 134, 76);
+  background:rgb(240, 125, 0);
   width: 2px;
   height: 100%;
   left: 0;
@@ -1857,7 +1924,7 @@ a.brand:focus{
 }
 
 .navbar-white  .social-list a:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 .copy-bottom{
@@ -1900,7 +1967,7 @@ a.brand:focus{
 
 .lang-bottom .menu-lang  a:hover,
 .lang-bottom.white .menu-lang  a:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 #pp-nav{
@@ -1955,7 +2022,7 @@ a.brand:focus{
 #pp-nav .pp-nav-down:hover,
 #pp-nav.white .pp-nav-up:hover,
 #pp-nav.white .pp-nav-down:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 #pp-nav.white .pp-nav-up,
@@ -1969,7 +2036,7 @@ a.brand:focus{
 
 #pp-nav li .active span, .pp-slidesNav .active span,
 #pp-nav span:hover, .pp-slidesNav span:hover{
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
 }
 
 
@@ -2103,7 +2170,7 @@ a.brand:focus{
   margin-bottom: 0;
   height: 0.2858rem;
   width: 7.142rem;
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
 }
 
 .title-uppercase{
@@ -2256,7 +2323,7 @@ a.brand:focus{
 }
 
 .project-box:hover{
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
   text-decoration: none;
   border-color: transparent;
 }
@@ -2299,7 +2366,7 @@ a.brand:focus{
 .icon-quote{
   display: inline-block;
   margin-top: -0.6rem;
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
   font-size: 5.14rem;
 }
 
@@ -2488,7 +2555,7 @@ a.brand:focus{
   width: 7rem;
   max-width: 100%;
   height: 0.28rem;
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
 }
 
 .title-info{
@@ -2519,6 +2586,10 @@ a.brand:focus{
 
 .page-inner{
   margin-top: 10.28rem;
+}
+
+.page-inner-about{
+  margin-top: 3.28rem;
 }
 
 .page-inner-contact {
@@ -2698,7 +2769,7 @@ a.brand:focus{
 
 .prev:hover,
 .next:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 .prev{
@@ -2773,7 +2844,7 @@ a.brand:focus{
 }
 
 .project-detail-control:hover{
-   color:rgb(226, 134, 76);
+   color:rgb(240, 125, 0);
 }
 
 .project-detail-control .show-info{
@@ -2792,7 +2863,7 @@ a.brand:focus{
   color: white;
 }
 .hide-info:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
 }
 
 .project-detail-text{
@@ -2891,7 +2962,7 @@ a.brand:focus{
 }
 
 .card:hover .card-block{
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
   color: #666;
 }
 
@@ -2945,7 +3016,7 @@ a.brand:focus{
 
 .card-row:hover{
   color: #666;
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
 }
 
 .card-row:hover .card-title,
@@ -3002,7 +3073,7 @@ a.brand:focus{
 }
 
 .posted-on a:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
   text-decoration: none;
 }
 
@@ -3077,7 +3148,7 @@ a.brand:focus{
 }
 
 .post-share a:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
 }
 
 
@@ -3142,7 +3213,7 @@ a.brand:focus{
 }
 
 .comment-metadata .fn a:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
   text-decoration: none;
 }
 
@@ -3224,7 +3295,7 @@ a.brand:focus{
 .widget_meta li a:hover,
 .widget_recent_entries li a:hover,
 .widget_nav_menu li a:hover{
-   color:rgb(226, 134, 76);
+   color:rgb(240, 125, 0);
    text-decoration:none;
 }
 
@@ -3347,7 +3418,7 @@ a.brand:focus{
 }
 
 .post-title:hover{
-  color: rgb(226, 134, 76);
+  color: rgb(240, 125, 0);
   text-decoration: none;
 }
 
@@ -3371,7 +3442,7 @@ a.brand:focus{
 .content-entry-image{
   padding-top: 38%;
   min-height: 28rem;
-  background: url(../images/1-1920x800.jpg) 50%;
+  background: url(../images/porque-construir.jpg) 50%;
   background-size: cover;
 }
 
@@ -3545,7 +3616,7 @@ a.brand:focus{
 }
 
 .add-new-team:hover{
-  background: rgb(226, 134, 76);
+  background: rgb(240, 125, 0);
   border-color: transparent;
 }
 
@@ -3620,7 +3691,7 @@ a.brand:focus{
 .phone-lg{
   font-size: 2.142rem;
   line-height: 1.3;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .contact-social{
@@ -3662,7 +3733,7 @@ a.brand:focus{
 
 .footer ul .active a,
 .footer ul li a:hover{
-  color:rgb(226, 134, 76);
+  color:rgb(240, 125, 0);
   text-decoration: none;
 }
 
@@ -3728,8 +3799,8 @@ a.brand:focus{
 
 
   .boxed{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.35rem;
+    padding-right: 2.35rem;
   }
 
   .boxed-inner{
@@ -3814,6 +3885,12 @@ a.brand:focus{
 
 /* 8.2 Min width 992px */
 
+@media (min-width: 1110px){
+  .boxed{
+    padding-left: 4.2857rem;
+    padding-right: 4.2857rem;
+  } 
+}
 
 
 @media (min-width: 992px){
@@ -3847,10 +3924,7 @@ a.brand:focus{
 
 
 
-  .boxed{
-    padding-left: 4.2857rem;
-    padding-right: 4.2857rem;
-  } 
+ 
 
   .right-boxed{
     right:4.2857rem;
@@ -3900,7 +3974,7 @@ a.brand:focus{
   }
 
   .page-header-3{
-    margin:9.2rem 0 12.2rem;
+    margin:1.5rem 0 2rem;
   }
 
   .page-header-3 .title-hr{
@@ -4072,11 +4146,11 @@ a.brand:focus{
   }
 
   .menu-list > li{
-    font-size: 2.571rem;
+    font-size: 1.4rem;
   }
 
   .menu-footer{
-    bottom: 6rem;
+    bottom: 4rem;
   }
 
   .menu-footer .copy{
