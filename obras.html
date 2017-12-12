@@ -161,7 +161,7 @@
               <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item villa js-isotope-item js-grid-item" >
+          <div class="grid-item villa js-isotope-item js-grid-item" onclick="openModal(6);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-boc/portada.jpg">
               <div class="project-hover">
@@ -169,10 +169,10 @@
                   <h3 class="project-title">CASA<br>BOC<br></h3>
                   <p class="project-description">Vivienda unifamiliar desarrollada en dos niveles, según la topografía del terreno, en planta baja garaje y en planta alta un amplio living-comedor, con grandes ventanales para aprovechar las vistas. Superficie construida: 187 metros cuadrados</div>
               </div>
-              <a href="casa-boc.html" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a  class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item interior js-isotope-item js-grid-item">
+          <div class="grid-item interior js-isotope-item js-grid-item" onclick="openModal(5);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-jbc/portada.jpg">
               <div class="project-hover">
@@ -184,7 +184,7 @@
               <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item interior js-isotope-item js-grid-item">
+          <div class="grid-item interior js-isotope-item js-grid-item" onclick="openModal(7);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-mam/portada.jpg">
               <div class="project-hover">
@@ -193,7 +193,7 @@
                   <p class="project-description">Vivienda unifamiliar ubicada en Country Fincas Del Sur.</p>
                 </div>
               </div>
-              <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
           <div class="grid-item exterior js-isotope-item js-grid-item" onclick="openModal(4);currentSlide(1)">
@@ -208,7 +208,7 @@
               <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item exterior js-isotope-item js-grid-item">
+          <div class="grid-item exterior js-isotope-item js-grid-item" onclick="openModal(8);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/vivienda2/portada.jpg">
               <div class="project-hover">
@@ -217,10 +217,10 @@
                   <p class="project-description">La vivienda cuenta 180 m2 cubiertos, el diseño consta de una planta dispuesta en forma de L. El diseño de la misma es cálido y funcional. Ambientes amplios y luminosos. El ambiente principal cuenta con dos puertas plegadizas que facilitan la separación del mismo.</p>
                 </div>
               </div>
-              <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item exterior js-isotope-item js-grid-item">
+          <div class="grid-item exterior js-isotope-item js-grid-item" onclick="openModal(9);currentSlide(1)">
               <div class="project-item item-shadow">
                 <img alt="" class="img-responsive" src="images/vivienda/portada.jpg">
                 <div class="project-hover">
@@ -229,10 +229,10 @@
                     <p class="project-description">La vivienda cuenta con 230 metros cubiertos. La premisa generar ambientes amplios y luminosos y con una importante conexión entre el interior y el exterior. Por tal motivo se opto por grandes ventanales y también por vidrios finos en doble altura, generando un juego de luces importante en el interior. Formas puras y simples.</p>
                   </div>
                 </div>
-                <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+                <a  class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
               </div>
             </div>
-            <div class="grid-item exterior js-isotope-item js-grid-item">
+            <div class="grid-item exterior js-isotope-item js-grid-item" onclick="openModal(10);currentSlide(1)">
                 <div class="project-item item-shadow">
                   <img alt="" class="img-responsive" src="images/duplex/portada.jpg">
                   <div class="project-hover">
@@ -241,7 +241,7 @@
                       <p class="project-description">Ubicados en B° Villa Cabrera, se encuentran desarrollados de la siguiente manera: en planta baja living, toilette y cocina comedor. En planta alta: dormitorios uno de ellos con balcón y amplios placares. El frente cuenta con un pórtico que le otorga jerarquía y privacidad al habitante.</p>
                     </div>
                   </div>
-                  <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+                  <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
                 </div>
               </div>
 
@@ -299,127 +299,338 @@
                   <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
                 </div>
               </div>
-                  <!-- modal roa -->
-                  <div id="myModal2" class="modal">
-                    <span class="close cursor" onclick="closeModal(2)">&times;</span>
+
+              <!-- modal roa -->
+              <div id="myModal2" class="modal">
+                <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                <div class="modal-content"  >
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="images/casa-roa/image-1.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="images/casa-roa/image-2.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="images/casa-roa/image-3.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="images/casa-roa/image-4.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="images/casa-roa/image-5.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="images/casa-roa/image-6.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide2">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="images/casa-roa/image-7.jpg" style="width:100%">
+                  </div>
+      
+                  <!-- Next/previous controls -->
+                  <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+      
+                </div>            
+              </div>
+  
+              <!-- modal casa cao -->
+              <div id="myModal3" class="modal">
+                  <span class="close cursor" onclick="closeModal(3)">&times;</span>
+                  <div class="modal-content"  >
+        
+                    <div class="mySlides" name="slide3">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="images/casa-cao/image-1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide3">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="images/casa-cao/image-2.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide3">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="images/casa-cao/image-3.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide3">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="images/casa-cao/image-4.jpg" style="width:100%">
+                    </div>
+        
+                    <!-- Next/previous controls -->
+                    <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+        
+                  </div>            
+                </div>
+  
+                <!-- modal sea -->
+              <div id="myModal4" class="modal">
+                  <span class="close cursor" onclick="closeModal(4)">&times;</span>
+                  <div class="modal-content"  >
+        
+                    <div class="mySlides" name="slide4">
+                      <div class="numbertext">1 / 8</div>
+                      <img src="images/casa-sea/image-1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide4">
+                      <div class="numbertext">2 / 6</div>
+                      <img src="images/casa-sea/image-2.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide4">
+                      <div class="numbertext">3 / 6</div>
+                      <img src="images/casa-sea/image-3.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide4">
+                      <div class="numbertext">4 / 6</div>
+                      <img src="images/casa-sea/image-4.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide4">
+                      <div class="numbertext">5 / 6</div>
+                      <img src="images/casa-sea/image-5.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide4">
+                      <div class="numbertext">6 / 6</div>
+                      <img src="images/casa-sea/image-6.jpg" style="width:100%">
+                    </div>
+        
+        
+                    <!-- Next/previous controls -->
+                    <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+        
+                  </div>            
+                </div>
+
+                                    <!-- modal jbc -->
+              <div id="myModal5" class="modal">
+                  <span class="close cursor" onclick="closeModal(5)">&times;</span>
+                  <div class="modal-content"  >
+        
+                    <div class="mySlides" name="slide5">
+                      <div class="numbertext">1 / 2</div>
+                      <img src="images/casa-jbc/image-1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide5">
+                      <div class="numbertext">2 / 2</div>
+                      <img src="images/casa-jbc/image-2.jpg" style="width:100%">
+                    </div>
+        
+        
+                    <!-- Next/previous controls -->
+                    <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+        
+                  </div>            
+                </div>
+
+                  <!-- modal casa boc -->
+            <div id="myModal6" class="modal">
+                <span class="close cursor" onclick="closeModal(6)">&times;</span>
+                <div class="modal-content"  >
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="images/casa-boc/image-1.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="images/casa-boc/image-2.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="images/casa-boc/image-3.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="images/casa-boc/image-4.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="images/casa-boc/image-5.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="images/casa-boc/image-6.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="images/casa-boc/image-7.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide6">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="images/casa-boc/image-8.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides" name="slide6">
+                      <div class="numbertext">9 / 9</div>
+                      <img src="images/casa-boc/image-9.jpg" style="width:100%">
+                  </div>
+      
+                  <!-- Next/previous controls -->
+                  <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              </div>
+
+              <!-- modal casa mam -->
+
+              <div id="myModal7" class="modal">
+                  <span class="close cursor" onclick="closeModal(7)">&times;</span>
+                  <div class="modal-content"  >
+        
+                    <div class="mySlides" name="slide7">
+                      <div class="numbertext">1 / 6</div>
+                      <img src="images/casa-mam/image-1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide7">
+                      <div class="numbertext">2 / 6</div>
+                      <img src="images/casa-mam/image-2.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide7">
+                      <div class="numbertext">3 / 6</div>
+                      <img src="images/casa-mam/image-3.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide6">
+                      <div class="numbertext">4 / 6</div>
+                      <img src="images/casa-mam/image-4.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide7">
+                      <div class="numbertext">5 / 6</div>
+                      <img src="images/casa-mam/image-5.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide7">
+                      <div class="numbertext">6 / 6</div>
+                      <img src="images/casa-mam/image-6.jpg" style="width:100%">
+                    </div>
+                    <!-- Next/previous controls -->
+                    <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                </div>
+
+                 <!-- modal casa vivienda 2 -->
+
+              <div id="myModal8" class="modal">
+                  <span class="close cursor" onclick="closeModal(8)">&times;</span>
+                  <div class="modal-content"  >
+        
+                    <div class="mySlides" name="slide8">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="images/vivienda/image-1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide8">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="images/vivienda2/image-2.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide8">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="images/vivienda2/image-3.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides" name="slide8">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="images/vivienda2/image-4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                </div>
+
+                <!-- vivienda 1 -->
+
+                <div id="myModal9" class="modal">
+                    <span class="close cursor" onclick="closeModal(9)">&times;</span>
                     <div class="modal-content"  >
           
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">1 / 7</div>
-                        <img src="images/casa-roa/image-1.jpg" style="width:100%">
+                      <div class="mySlides" name="slide9">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/vivienda/image-1.jpg" style="width:100%">
                       </div>
           
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">2 / 7</div>
-                        <img src="images/casa-roa/image-2.jpg" style="width:100%">
+                      <div class="mySlides" name="slide9">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/vivienda/image-2.jpg" style="width:100%">
                       </div>
           
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">3 / 7</div>
-                        <img src="images/casa-roa/image-3.jpg" style="width:100%">
+                      <div class="mySlides" name="slide9">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/vivienda/image-3.jpg" style="width:100%">
                       </div>
           
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">4 / 7</div>
-                        <img src="images/casa-roa/image-4.jpg" style="width:100%">
-                      </div>
-          
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">5 / 7</div>
-                        <img src="images/casa-roa/image-5.jpg" style="width:100%">
-                      </div>
-          
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">6 / 7</div>
-                        <img src="images/casa-roa/image-6.jpg" style="width:100%">
-                      </div>
-          
-                      <div class="mySlides" name="slide2">
-                        <div class="numbertext">7 / 7</div>
-                        <img src="images/casa-roa/image-7.jpg" style="width:100%">
-                      </div>
-          
+  
                       <!-- Next/previous controls -->
                       <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
                       <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
-          
-                    </div>            
+                    </div>
                   </div>
-      
-                  <!-- modal casa cao -->
-                  <div id="myModal3" class="modal">
-                      <span class="close cursor" onclick="closeModal(3)">&times;</span>
-                      <div class="modal-content"  >
-            
-                        <div class="mySlides" name="slide3">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="images/casa-cao/image-1.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide3">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="images/casa-cao/image-2.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide3">
-                          <div class="numbertext">3 / 4</div>
-                          <img src="images/casa-cao/image-3.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide3">
-                          <div class="numbertext">4 / 4</div>
-                          <img src="images/casa-cao/image-4.jpg" style="width:100%">
-                        </div>
-            
-                        <!-- Next/previous controls -->
-                        <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
-            
-                      </div>            
+
+                  <!-- duplex -->
+
+                <div id="myModal10" class="modal">
+                    <span class="close cursor" onclick="closeModal(10)">&times;</span>
+                    <div class="modal-content"  >
+          
+                      <div class="mySlides" name="slide10">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/duplex/image-1.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide10">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/duplex/image-2.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide10">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/duplex/image-3.jpg" style="width:100%">
+                      </div>
+          
+  
+                      <!-- Next/previous controls -->
+                      <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-      
-                    <!-- modal sea -->
-                  <div id="myModal4" class="modal">
-                      <span class="close cursor" onclick="closeModal(4)">&times;</span>
-                      <div class="modal-content"  >
-            
-                        <div class="mySlides" name="slide4">
-                          <div class="numbertext">1 / 8</div>
-                          <img src="images/casa-sea/image-1.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide4">
-                          <div class="numbertext">2 / 6</div>
-                          <img src="images/casa-sea/image-2.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide4">
-                          <div class="numbertext">3 / 6</div>
-                          <img src="images/casa-sea/image-3.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide4">
-                          <div class="numbertext">4 / 6</div>
-                          <img src="images/casa-sea/image-4.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide4">
-                          <div class="numbertext">5 / 6</div>
-                          <img src="images/casa-sea/image-5.jpg" style="width:100%">
-                        </div>
-            
-                        <div class="mySlides" name="slide4">
-                          <div class="numbertext">6 / 6</div>
-                          <img src="images/casa-sea/image-6.jpg" style="width:100%">
-                        </div>
-            
-            
-                        <!-- Next/previous controls -->
-                        <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
-            
-                      </div>            
-                    </div>
+                  </div>
+
+
 
 
         
