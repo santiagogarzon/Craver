@@ -123,7 +123,7 @@
           </div> -->
         </div>
         <div class="grid-items js-isotope js-grid-items">
-          <div class="grid-item building js-isotope-item js-grid-item">
+          <div class="grid-item building js-isotope-item js-grid-item" onclick="openModal(1);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-jbc1/portada.jpg">
               <div class="project-hover">
@@ -132,10 +132,10 @@
                   <p class="project-description">Vivienda unifamiliar, de 150 m2, desarrollada en dos plantas, con grandes ventanales y amplios ambientes. La vivienda fue diseñada teniendo en cuenta futuras ampliaciones en planta alta: sobre el living otro dormitorio y sobre el lavadero futuro baño en suite.</p>
                 </div>
               </div>
-              <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item building js-isotope-item js-grid-item">
+          <div class="grid-item building js-isotope-item js-grid-item" onclick="openModal(2);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-roa/portada.jpg">
               <div class="project-hover">
@@ -145,10 +145,10 @@
                       La orientación de la misma fue pensada para garantizar las vistas panorámicas que presenta el terreno pos su implantación dentro del loteo. La morfología de la misma es simple y se busco generar un juego de volúmenes y colores que le otorguen personalidad acorde a sus ocupantes.</p>
                 </div>
               </div>
-              <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item villa js-isotope-item js-grid-item">
+          <div class="grid-item villa js-isotope-item js-grid-item" onclick="openModal(3);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-cao/portada.jpg">
               <div class="project-hover">
@@ -158,10 +158,10 @@
                       Por tal motivo, la vivienda cuenta con importante ventanales y galería perimetral para poder disfrutar desde todas las caras de la misma las vistas, ya que se encuentra ubicada en la zona mas elevada del Country, otorgándole vistas hacia las sierras y la ciudad de Córdoba.</p>
                 </div>
               </div>
-              <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item villa js-isotope-item js-grid-item">
+          <div class="grid-item villa js-isotope-item js-grid-item" >
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-boc/portada.jpg">
               <div class="project-hover">
@@ -196,7 +196,7 @@
               <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
-          <div class="grid-item exterior js-isotope-item js-grid-item">
+          <div class="grid-item exterior js-isotope-item js-grid-item" onclick="openModal(4);currentSlide(1)">
             <div class="project-item item-shadow">
               <img alt="" class="img-responsive" src="images/casa-sea/portada.jpg">
               <div class="project-hover">
@@ -205,7 +205,7 @@
                   <p class="project-description">La vivienda cuenta con una superficie de 227.73 m2. Se busco independizar la zona de ingreso - recepción del resto de los ambientes generando la circulación vertical como nexo intimo, evitando el contacto espacial y visual. En planta alta se encuentran las habitaciones las cuales cuenta con su respectivo vestidor y baño sectorizado semi-suite.</p>
                 </div>
               </div>
-              <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
+              <a class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
             </div>
           </div>
           <div class="grid-item exterior js-isotope-item js-grid-item">
@@ -244,7 +244,185 @@
                   <a href="" class="link-arrow">Ver Obra <i class="icon ion-ios-arrow-right"></i></a>
                 </div>
               </div>
-        </div>
+
+            </div>
+              
+        <!-- MODALES -->        
+
+            <!-- modal casa jbc1 -->
+            <div id="myModal1" class="modal">
+                <span class="close cursor" onclick="closeModal(1)">&times;</span>
+                <div class="modal-content"  >
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/casa-jbc1/image-1.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/casa-jbc1/image-2.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/casa-jbc1/image-3.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/casa-jbc1/image-4.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/casa-jbc1/image-5.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/casa-jbc1/image-6.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/casa-jbc1/image-7.jpg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides" name="slide1">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/casa-jbc1/image-8.jpg" style="width:100%">
+                  </div>
+      
+                  <!-- Next/previous controls -->
+                  <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              </div>
+                  <!-- modal roa -->
+                  <div id="myModal2" class="modal">
+                    <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                    <div class="modal-content"  >
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="images/casa-roa/image-1.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="images/casa-roa/image-2.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="images/casa-roa/image-3.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="images/casa-roa/image-4.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="images/casa-roa/image-5.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="images/casa-roa/image-6.jpg" style="width:100%">
+                      </div>
+          
+                      <div class="mySlides" name="slide2">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="images/casa-roa/image-7.jpg" style="width:100%">
+                      </div>
+          
+                      <!-- Next/previous controls -->
+                      <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+          
+                    </div>            
+                  </div>
+      
+                  <!-- modal casa cao -->
+                  <div id="myModal3" class="modal">
+                      <span class="close cursor" onclick="closeModal(3)">&times;</span>
+                      <div class="modal-content"  >
+            
+                        <div class="mySlides" name="slide3">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="images/casa-cao/image-1.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide3">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images/casa-cao/image-2.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide3">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="images/casa-cao/image-3.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide3">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="images/casa-cao/image-4.jpg" style="width:100%">
+                        </div>
+            
+                        <!-- Next/previous controls -->
+                        <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+            
+                      </div>            
+                    </div>
+      
+                    <!-- modal sea -->
+                  <div id="myModal4" class="modal">
+                      <span class="close cursor" onclick="closeModal(4)">&times;</span>
+                      <div class="modal-content"  >
+            
+                        <div class="mySlides" name="slide4">
+                          <div class="numbertext">1 / 8</div>
+                          <img src="images/casa-sea/image-1.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide4">
+                          <div class="numbertext">2 / 6</div>
+                          <img src="images/casa-sea/image-2.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide4">
+                          <div class="numbertext">3 / 6</div>
+                          <img src="images/casa-sea/image-3.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide4">
+                          <div class="numbertext">4 / 6</div>
+                          <img src="images/casa-sea/image-4.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide4">
+                          <div class="numbertext">5 / 6</div>
+                          <img src="images/casa-sea/image-5.jpg" style="width:100%">
+                        </div>
+            
+                        <div class="mySlides" name="slide4">
+                          <div class="numbertext">6 / 6</div>
+                          <img src="images/casa-sea/image-6.jpg" style="width:100%">
+                        </div>
+            
+            
+                        <!-- Next/previous controls -->
+                        <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+            
+                      </div>            
+                    </div>
+
+
+        
       </div>
     </div>
 
@@ -283,6 +461,54 @@
       </footer>
   </div>
 </div>
+
+<!-- MODAL -->
+<script>
+    var index;
+    // Open the Modal
+    function openModal(numero) {
+      document.getElementById('myModal' + numero).style.display = "block";
+      index= numero;
+    }
+    
+    // Close the Modal
+    function closeModal(numero) {
+      document.getElementById('myModal' + numero).style.display = "none";
+      index= numero;
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex, index);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n, index);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n , index);
+    }
+    
+    function showSlides(n , x) {
+      var i;
+      var slides = document.getElementsByName("slide" + x);
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
 
 <!-- jQuery -->
 

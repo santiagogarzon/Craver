@@ -4183,5 +4183,330 @@ a.brand:focus{
 }
 
 
+/* calculadora */
+
+.text-calculadora {
+  margin: 0;
+}
+
+.stages {
+	font-size: 0;
+	text-align: justify;
+}
+
+.stages:after {
+	content: '';
+	display: inline-block;
+	font-size: 0;
+	text-align: justify;
+	width: 100%;
+}
+
+.radio-hide {
+  display: none !important;
+  visibility:hidden;
+}
+
+.stages label {
+	background: #ffffff;
+	border: solid 5px #c0c0c0;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0;
+	font-weight: 700;
+	height: 50px;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 50px;
+	z-index: 1;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.stages label:after {
+	content: '\2713';
+	color: rgb(240, 125, 0);
+	display: inline-block;
+	font-size: 16px;
+}
+
+#one:checked ~ .stages label[for="one"],
+#two:checked ~ .stages label[for="two"],
+#three:checked ~ .stages label[for="three"],
+#four:checked ~ .stages label[for="four"],
+#five:checked ~ .stages label[for="five"],
+#six:checked ~ .stages label[for="six"] {
+	border-color: rgb(240, 125, 0);
+}
+
+.stages label.active{
+	border-color: rgb(240, 125, 0) !important;
+}
+
+#one:checked ~ .stages label,
+#two:checked ~ .stages label[for="one"] ~ label,
+#three:checked ~ .stages label[for="two"] ~ label,
+#four:checked ~ .stages label[for="three"] ~ label,
+#five:checked ~ .stages label[for="four"] ~ label,
+#six:checked ~ .stages label[for="five"] ~ label {
+	font-size: 1rem;
+}
+
+#one:checked ~ .stages label:after,
+#two:checked ~ .stages label[for="one"] ~ label:after,
+#three:checked ~ .stages label[for="two"] ~ label:after,
+#four:checked ~ .stages label[for="three"] ~ label:after,
+#five:checked ~ .stages label[for="four"] ~ label:after,
+#six:checked ~ .stages label[for="five"] ~ label:after {
+	display: none;
+}
+
+.progress-c > span {
+	background: #c0c0c0;
+	display: inline-block;
+	height: 5px;
+	transform: translateY(-3.25em);
+	transition: 0.3s;
+	width: 0;
+}
+
+#two:checked ~ .progress-c span {
+	width: calc(100% / 5 * 1);
+}
+
+#three:checked ~ .progress-c span {
+	width: calc(100% / 5 * 2);
+}
+
+#four:checked ~ .progress-c span {
+	width: calc(100% / 5 * 3);
+}
+
+#five:checked ~ .progress-c span {
+	width: calc(100% / 5 * 4);
+}
+
+#six:checked ~ .progress-c span {
+	width: calc(100% / 5 * 5);
+}
 
 
+.panels div {
+	display: none;
+}
+
+.panels  {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+}
+
+#one:checked ~ .panels [data-panel="one"],
+#two:checked ~ .panels [data-panel="two"],
+#three:checked ~ .panels [data-panel="three"],
+#four:checked ~ .panels [data-panel="four"],
+#five:checked ~ .panels [data-panel="five"],
+#six:checked ~ .panels [data-panel="six"] {
+  display: block;
+  width: 100%;
+}
+/* Custom code for the demo */
+
+
+
+
+.form {
+	background: #ffffff;
+	box-shadow: 3px 3px 4px 3px rgb(240, 125, 0);
+	margin: 4em;
+	min-width: 480px;
+	padding: 1em;
+}
+
+.panels div .options {
+  display: inherit;
+}
+
+
+.panels img {
+  margin: 0 auto;
+}
+
+.panels div {
+	border-top: solid 1px #c0c0c0;
+	margin: 1em 0 0;
+	padding: 1em 0 0;
+}
+
+.form input {
+	box-sizing: border-box;
+	padding: .4em;
+}
+
+.form h4 {
+  color: black;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.form label {
+  color: black;
+}
+.form button {
+	background-color: rgb(240, 125, 0);
+	border: 0;
+	color: #000000;
+	cursor: pointer;
+	font-weight: 700;
+	margin: 1rem;
+	padding: 1em;
+}
+
+.form button:hover {
+	opacity: 0.8;
+}
+
+
+/* MODAL */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 949px;
+}
+
+@media (max-width: 500px){
+  .modal-content {
+    width: 80%;
+    margin-top: 9rem;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: relative;
+  top: 0;
+  right: 55px;
+  font-size: 65px;
+  font-weight: bold;
+  z-index: 9999;
+  opacity: .8 !important;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(240, 125, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev-modal,
+.next-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next-modal {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-modal,
+.next-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
