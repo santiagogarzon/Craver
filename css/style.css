@@ -4185,6 +4185,10 @@ a.brand:focus{
 
 /* calculadora */
 
+.img-responsive {
+  max-height: 19rem !important;
+}
+
 .text-calculadora {
   margin: 0;
 }
@@ -4242,7 +4246,9 @@ a.brand:focus{
 #three:checked ~ .stages label[for="three"],
 #four:checked ~ .stages label[for="four"],
 #five:checked ~ .stages label[for="five"],
-#six:checked ~ .stages label[for="six"] {
+#six:checked ~ .stages label[for="six"],
+#seven:checked ~ .stages label[for="seven"],
+#eight:checked ~ .stages label[for="eight"] {
 	border-color: rgb(240, 125, 0);
 }
 
@@ -4255,7 +4261,9 @@ a.brand:focus{
 #three:checked ~ .stages label[for="two"] ~ label,
 #four:checked ~ .stages label[for="three"] ~ label,
 #five:checked ~ .stages label[for="four"] ~ label,
-#six:checked ~ .stages label[for="five"] ~ label {
+#six:checked ~ .stages label[for="five"] ~ label,
+#seven:checked ~ .stages label[for="six"] ~ label,
+#eight:checked ~ .stages label[for="seven"] ~ label {
 	font-size: 1rem;
 }
 
@@ -4264,7 +4272,9 @@ a.brand:focus{
 #three:checked ~ .stages label[for="two"] ~ label:after,
 #four:checked ~ .stages label[for="three"] ~ label:after,
 #five:checked ~ .stages label[for="four"] ~ label:after,
-#six:checked ~ .stages label[for="five"] ~ label:after {
+#six:checked ~ .stages label[for="five"] ~ label:after,
+#seven:checked ~ .stages label[for="six"] ~ label:after,
+#eight:checked ~ .stages label[for="seven"] ~ label:after {
 	display: none;
 }
 
@@ -4278,23 +4288,31 @@ a.brand:focus{
 }
 
 #two:checked ~ .progress-c span {
-	width: calc(100% / 5 * 1);
+	width: calc(100% / 7 * 1);
 }
 
 #three:checked ~ .progress-c span {
-	width: calc(100% / 5 * 2);
+	width: calc(100% / 7 * 2);
 }
 
 #four:checked ~ .progress-c span {
-	width: calc(100% / 5 * 3);
+	width: calc(100% / 7 * 3);
 }
 
 #five:checked ~ .progress-c span {
-	width: calc(100% / 5 * 4);
+	width: calc(100% / 7 * 4);
 }
 
 #six:checked ~ .progress-c span {
-	width: calc(100% / 5 * 5);
+	width: calc(100% / 7 * 5);
+}
+
+#seven:checked ~ .progress-c span {
+	width: calc(100% / 7 * 6);
+}
+
+#eight:checked ~ .progress-c span {
+	width: calc(100% / 7 * 7);
 }
 
 
@@ -4313,7 +4331,9 @@ a.brand:focus{
 #three:checked ~ .panels [data-panel="three"],
 #four:checked ~ .panels [data-panel="four"],
 #five:checked ~ .panels [data-panel="five"],
-#six:checked ~ .panels [data-panel="six"] {
+#six:checked ~ .panels [data-panel="six"],
+#seven:checked ~ .panels [data-panel="seven"],
+#eight:checked ~ .panels [data-panel="eight"] {
   display: block;
   width: 100%;
 }
@@ -4352,7 +4372,7 @@ a.brand:focus{
 
 .form h4 {
   color: black;
-  margin: 1rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -4371,6 +4391,14 @@ a.brand:focus{
 
 .form button:hover {
 	opacity: 0.8;
+}
+
+.siguiente {
+
+}
+
+.anterior {
+  
 }
 
 
