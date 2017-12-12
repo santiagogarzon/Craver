@@ -4185,7 +4185,7 @@ a.brand:focus{
 
 /* calculadora */
 
-.img-responsive {
+.form .img-responsive {
   max-height: 19rem !important;
 }
 
@@ -4398,7 +4398,7 @@ a.brand:focus{
 }
 
 .anterior {
-  
+
 }
 
 
