@@ -119,7 +119,46 @@
           </div>
         </main>
 
-
+        <div class="resultado text-center">
+          <div>
+            <h1 class="resultado-text">  
+               
+            </h1>
+            <section class="section-message section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="section-info">
+                      <div class="title-hr"></div>
+                      <div class="info-title">Danos tus datos para contactarte</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <form class="js-form">
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-lg-4">
+                          <input class="input-gray" type="text" name="name" required placeholder="Nombre*">
+                        </div>
+                        <div class="form-group col-sm-6 col-lg-4">
+                          <input class="input-gray" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-12 col-lg-4">
+                          <input class="input-gray" type="text" name="phone" placeholder="Telefono">
+                        </div>
+                        <div class="form-group col-sm-12">
+                          <textarea class="input-gray" name="message"  placeholder="Otras preferencias"></textarea>
+                        </div>
+                        <div class="col-sm-12"><button type="submit" class="btn-upper btn-yellow btn">Enviar Mensaje</button></div>
+                      </div>
+                      <div class="success-message"><i class="fa fa-check text-primary"></i> Gracias!. Tu mensaje se ha enviado correctamente...</div>
+                      <div class="error-message">Lo sentimos, pero su mensaje no se ha podido enviar...</div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
         <div class="form" id="calculadora-form">
           
             <input class="radio-hide" id="one" type="radio" name="stage" checked="checked" />
@@ -147,68 +186,68 @@
             <div class="panels">
               <div data-panel="one">
                 <h4>¿Cómo querés tu cocina?</h4>
-                <div class="col-lg-3 options text-center">
+                <div class="col-lg-3 col-md-3 options text-center">
                   <img alt="" src="images/calc/cocinas/simple.png" class="img-responsive">
-                      <input class="" type="radio" name="cocina" value="0" />
+                      <input class="" type="radio" name="cocina" value="11.6" />
                       Cocina Simple
                 </div>
-                <div class="col-lg-4 options text-center">
+                <div class="col-lg-4 col-md-4 options text-center">
                     <img alt="" src="images/calc/cocinas/isla.png" class="img-responsive">
-                    <input class="" type="radio" name="cocina" value="0" />
+                    <input class="" type="radio" name="cocina" value="17" />
                     Cocina con Isla
                 </div>
-                <div class="col-lg-5 options text-center">
+                <div class="col-lg-5 col-md-5 options text-center">
                       <img alt="" src="images/calc/cocinas/cocina-comedor.png" class="img-responsive">
-                      <input class="" type="radio" name="cocina" value="0" />
+                      <input class="" type="radio" name="cocina" value="26.7" />
                       Cocina Comedor                      
                 </div>  
               </div>
               <div data-panel="two">
                 <h4>¿Cuántos baños necesitas?</h4>
 
-                  <div class="col-lg-3 options text-center">
+                  <div class="col-lg-3 col-md-3 options text-center">
                         <img src="images/calc/baños/toillete.png" class="img-responsive">
                         Toillete <br>
                         <select name="baño-toillete" form="calculadora-form">
                             <option value="0">Ninguno</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="3.6">1</option>
+                            <option value="7.2">2</option>
+                            <option value="10.8">3</option>
                           </select>
                                               
                   </div>
 
-                  <div class="col-lg-3 options text-center">
+                  <div class="col-lg-3 col-md-3 options text-center">
                     <img src="images/calc/baños/simple.png" class="img-responsive">   
                     Baño Simple <br>                   
                     <select name="baño-simple" form="calculadora-form">
                         <option value="0">Ninguno</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="6.5">1</option>
+                        <option value="13">2</option>
+                        <option value="19.5">3</option>
                       </select>
                         
                 </div>
-                <div class="col-lg-3 options text-center">
+                <div class="col-lg-3 col-md-3 options text-center">
                     <img src="images/calc/baños/antebaño.png" class="img-responsive">
                     Ante Baño <br>
-                    <select name="baño-Ante" form="calculadora-form">
+                    <select name="baño-ante" form="calculadora-form">
                         <option value="0">Ninguno</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="7.4">1</option>
+                        <option value="14.8">2</option>
+                        <option value="22.2">3</option>
                       </select>
                       
                 </div>
                 
-                <div class="col-lg-3 options text-center">
+                <div class="col-lg-3 col-md-3 options text-center">
                     <img src="images/calc/baños/zonificado.png" class="img-responsive">
                     Baño Zonificado      <br>
                     <select name="baño-zonificado" form="calculadora-form">
                         <option value="0">Ninguno</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="9.1">1</option>
+                        <option value="18.2">2</option>
+                        <option value="27.3">3</option>
                       </select>
                                     
                 </div>
@@ -216,93 +255,93 @@
               </div>
               <div data-panel="three">
                   <h4>¿Cómo querés tu comedor?</h4>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                     <img src="images/calc/comedor/comedor6.png" class="img-responsive">
-                        <input class="" type="radio" name="comedor" value="1" />
+                        <input class="" type="radio" name="comedor" value="17" />
                         Comedor para 6 personas
                   </div>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                       <img src="images/calc/comedor/comedor8.png" class="img-responsive">
-                      <input class="" type="radio" name="comedor" value="2" />
+                      <input class="" type="radio" name="comedor" value="19" />
                       Comedor para 8 personas
                   </div>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                         <img src="images/calc/comedor/comedor10.png" class="img-responsive">
-                        <input class="" type="radio" name="cocina" value="3" />
+                        <input class="" type="radio" name="comedor" value="26.5" />
                         Comedor para 10 personas                      
                   </div> 
               </div>
               <div data-panel="four">
                   <h4>¿Cómo querés tu living?</h4>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                     <img src="images/calc/living/living5-6.png" class="img-responsive">
-                        <input class="" type="radio" name="living" value="1" />
-                        Living para 5 o 6 personas
+                        <input class="" type="radio" name="living" value="17" />
+                        Living para 4 o 5 personas
                   </div>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                       <img src="images/calc/living/living8-9.png" class="img-responsive">
-                      <input class="" type="radio" name="living" value="2" />
+                      <input class="" type="radio" name="living" value="19.5" />
                       Living para 8 o 9 personas
                   </div>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                         <img src="images/calc/living/living10-11.png" class="img-responsive">
-                        <input class="" type="radio" name="living" value="3" />
+                        <input class="" type="radio" name="living" value="29" />
                         Living para 10 o 11 personas                      
                   </div> 
               </div>
               <div data-panel="five">
                   <h4>¿Garage para cuántos autos?</h4>
-                  <div class="col-lg-3 options text-center">
+                  <div class="col-lg-3 col-md-3 options text-center">
                     <img alt="" src="images/calc/garage/garage1.png" class="img-responsive">
-                        <input class="" type="radio" name="garage" value="1" />
+                        <input class="" type="radio" name="garage" value="17.7" />
                         Garage para 1 auto
                   </div>
-                  <div class="col-lg-4 options text-center">
+                  <div class="col-lg-4 col-md-4 options text-center">
                       <img src="images/calc/garage/garage2.png" class="img-responsive">
-                      <input class="" type="radio" name="garage" value="2" />
+                      <input class="" type="radio" name="garage" value="32.3" />
                       Garage para 2 autos
                   </div>
-                  <div class="col-lg-5 options text-center">
+                  <div class="col-lg-5 col-md-5 options text-center">
                         <img src="images/calc/garage/garage3.png" class="img-responsive">
-                        <input class="" type="radio" name="garage" value="3" />
+                        <input class="" type="radio" name="garage" value="46" />
                         Garage para 3 autos                      
                   </div> 
               </div>
               <div data-panel="six">
                   <h4>¿Cómo querés el Dormitorio Principal?</h4>
-                  <div class="col-lg-6 options text-center">
+                  <div class="col-lg-6 col-md-6 options text-center">
                     <img src="images/calc/dorm-princ/simple.png" class="img-responsive">
-                        <input class="" type="radio" name="dorm-princ" value="1" />
+                        <input class="" type="radio" name="dorm-princ" value="22" />
                         Simple
                   </div>
-                  <div class="col-lg-6 options text-center">
+                  <div class="col-lg-6 col-md-6 options text-center">
                       <img src="images/calc/dorm-princ/con-vestidor.png" class="img-responsive">
-                      <input class="" type="radio" name="dorm-princ" value="2" />
+                      <input class="" type="radio" name="dorm-princ" value="29.5" />
                       Con Vestidor
                   </div>
               </div>
               <div data-panel="seven">
                   <h4>¿Y los Dormitorios Secundarios?</h4>
     
-                    <div class="col-lg-6 options text-center">
+                    <div class="col-lg-6 col-md-6 options text-center">
                       <img src="images/calc/dorm-sec/simple.png" class="img-responsive">   
                       Simple <br>                   
                       <select name="simple" form="calculadora-form">
                           <option value="0">Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
+                          <option value="17.5">1</option>
+                          <option value="35">2</option>
+                          <option value="52.5">3</option>
                         </select>
                           
                   </div>
-                  <div class="col-lg-6 options text-center">
+                  <div class="col-lg-6 col-md-6 options text-center">
                       <img src="images/calc/dorm-sec/doble.png" class="img-responsive">
                       Doble <br>
                       <select name="doble" form="calculadora-form">
                           <option value="0">Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
+                          <option value="24.5">1</option>
+                          <option value="49">2</option>
+                          <option value="73.5">3</option>
                         </select>
                         
                   </div>
@@ -312,48 +351,48 @@
                 <div data-panel="eight">
                     <h4>¿Que otros ambientes necesitas?</h4>
     
-                      <div class="col-lg-3 options text-center">
+                      <div class="col-lg-3 col-md-3 options text-center">
                             <img src="images/calc/otros/deposito.png" class="img-responsive">
                             Deposito <br>
                             <select name="deposito" form="calculadora-form">
                                 <option value="0">Ninguno</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                                <option value="11.5">1</option>
+                                <option value="23">2</option>
+                                <option value="34.5">3</option>
                               </select>
                                                   
                       </div>
     
-                      <div class="col-lg-3 options text-center">
+                      <div class="col-lg-3 col-md-3 options text-center">
                         <img src="images/calc/otros/estudio.png" class="img-responsive">   
                         Estudio <br>                   
-                        <select name="Estudio" form="calculadora-form">
+                        <select name="estudio" form="calculadora-form">
                             <option value="0">Ninguno</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="15">1</option>
+                            <option value="30">2</option>
+                            <option value="45">3</option>
                           </select>
                             
                     </div>
-                    <div class="col-lg-3 options text-center">
+                    <div class="col-lg-3 col-md-3 options text-center">
                         <img src="images/calc/otros/lavadero.png" class="img-responsive">
                         Lavadero <br>
-                        <select name="Lavadero" form="calculadora-form">
+                        <select name="lavadero" form="calculadora-form">
                             <option value="0">Ninguno</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="6.8">1</option>
+                            <option value="13.6">2</option>
+                            <option value="20.4">3</option>
                           </select>
                           
                     </div>
                     
-                    <div class="col-lg-3 options text-center">
+                    <div class="col-lg-3 col-md-3 options text-center">
                         <img src="images/calc/otros/deposito.png" class="img-responsive">
                         Plantas de tu casa      <br>
                         <select name="plantas" form="calculadora-form">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="0">1</option>
+                            <option value="16">2</option>
+                            <option value="32">3</option>
                           </select>
                                         
                     </div>
@@ -361,7 +400,7 @@
                   </div>
 
             </div>
-            <div class="text-center">
+            <div class="row text-center">
               <button class="btn-upper btn-yellow btn anterior">Anterior</button>
               <button class="btn-upper btn-yellow btn siguiente">Siguiente</button>
             </div>

@@ -4185,6 +4185,38 @@ a.brand:focus{
 
 /* calculadora */
 
+@media (max-width: 600px) {
+  .form .img-responsive {
+    max-height: 7rem !important;
+  }
+  
+  .stages {
+    display: none !important;
+  }
+
+  .progress-c {
+    display: none !important;
+  }
+
+  .anterior{
+    display: none !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .form .img-responsive {
+    max-height: 14rem !important;
+  }
+}
+
+.resultado {
+  display: none;
+}
+
+.resultado-text {
+  color: rgb(240, 125, 0);
+}
+
 .form .img-responsive {
   max-height: 19rem ;
 }
@@ -4346,7 +4378,6 @@ a.brand:focus{
 	background: #ffffff;
 	box-shadow: 3px 3px 4px 3px rgb(240, 125, 0);
 	margin: 4em;
-	min-width: 480px;
 	padding: 1em;
 }
 
@@ -4371,7 +4402,7 @@ a.brand:focus{
 }
 
 .form h4 {
-  color: black;
+  color: rgb(240, 125, 0);
   margin: 0 auto;
   text-align: center;
 }

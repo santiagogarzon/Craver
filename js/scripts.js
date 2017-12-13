@@ -578,7 +578,7 @@
 			    submitHandler: function(form){
 		        	$.ajax({
 			            type: "POST",
-			            url:"mail.php",
+			            url:"php/mail-contacto.php",
 			            data: $(form).serialize(),
 			            success: function() {
 		                	$('.success-message').show();
@@ -592,5 +592,28 @@
 			});
 		});
 	}
+
+
+if ($('.js-form2').length) {
+	$('.js-form2').each(function(){
+		$(this).validate({
+			errorClass: 'error wobble-error',
+			submitHandler: function(form){
+				$.ajax({
+					type: "POST",
+					url:"php/mail-rrhh.php",
+					data: $(form).serialize(),
+					success: function() {
+						$('.success-message').show();
+					},
+
+					error: function(){
+						$('.error-message').show();
+					}
+				});
+			}
+		});
+	});
+}
 
 })(jQuery);

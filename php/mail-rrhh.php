@@ -1,15 +1,15 @@
 <?php
 $name = $_POST["name"];
 $email = $_POST["email"];
-$subject = $_POST["subject"];
-$message = $_POST["message"];
+$subject = $_POST["phone"];
+$message = $_POST["cv"];
 
 
-$EmailTo = "000.lunchbox@gmail.com";
-$Title = "New Message Received";
+$EmailTo = "santiagogarzon04@gmail.com";
+$Title = "Nueva Consulta para trabajar en Craver de la Web Page";
 
 // prepare email body text
-$Fields .= "Name: ";
+$Fields .= "Nombre: ";
 $Fields .= $name;
 $Fields .= "\n";
 
@@ -17,11 +17,11 @@ $Fields.= "Email: ";
 $Fields .= $email;
 $Fields .= "\n";
 
-$Fields.= "Subject: ";
+$Fields.= "Telefono: ";
 $Fields .= $subject;
 $Fields .= "\n";
 
-$Fields .= "Message: ";
+$Fields .= "CV: ";
 $Fields .= $message;
 $Fields .= "\n";
 
