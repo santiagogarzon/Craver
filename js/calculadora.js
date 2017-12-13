@@ -54,13 +54,17 @@ var calcularValores = function() {
 
 	if($('input:radio[name=cocina]:checked').val()){
 		metros += parseFloat($('input:radio[name=cocina]:checked').val());
-	}else if($('input:radio[name=comedor]:checked').val()) {
+	}
+	if($('input:radio[name=comedor]:checked').val()) {
 		metros += parseFloat($('input:radio[name=comedor]:checked').val());
-	}else if($('input:radio[name=living]:checked').val()) {
+	}
+	if($('input:radio[name=living]:checked').val()) {
 		metros += parseFloat($('input:radio[name=living]:checked').val());
-	}else if($('input:radio[name=garage]:checked').val()) {
+	}
+	if($('input:radio[name=garage]:checked').val()) {
 		metros += parseFloat($('input:radio[name=garage]:checked').val());
-	}else if($('input:radio[name=dorm-princ]:checked').val()) {
+	}
+	if($('input:radio[name=dorm-princ]:checked').val()) {
 		metros += parseFloat($('input:radio[name=dorm-princ]:checked').val());
 	}
 
@@ -74,6 +78,9 @@ var calcularValores = function() {
 	metros += parseFloat($('select[name=estudio]').val());
 	metros += parseFloat($('select[name=plantas]').val());
 	metros += parseFloat($('select[name=deposito]').val());
+	
+	metros = Math.round(metros);
+	
 	$('.resultado-text').html('Necesitas ' + metros +  ' metros cuadrados para tu casa!!');
 	$('.form').hide();
 	$('.text-calculadora').empty(); 
