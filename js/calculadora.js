@@ -5,7 +5,7 @@ $('.form .stages label').click(function() {
 		var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
 		selectedIndex = selectedIndex + 1;
 	
-		if (selectedIndex == 8) {
+		if (selectedIndex == 9) {
 			$('.siguiente').html('Calcular');
 		} else {
 			$('.siguiente').html('Siguiente');
@@ -22,13 +22,13 @@ $('.siguiente ').click(function() {
 
 	$('.form input[type="radio"]:nth-of-type(' + selectedIndex + ')').prop('checked', true);
 
-	if (selectedIndex == 8) {
+	if (selectedIndex == 9) {
 		$('.siguiente').html('Calcular');
 	} else {
 		$('.siguiente').html('Siguiente');
 	}
 
-	if(selectedIndex == 9) {
+	if(selectedIndex == 10) {
 		calcularValores();
 	}
 });
@@ -68,6 +68,10 @@ var calcularValores = function() {
 		metros += parseFloat($('input:radio[name=dorm-princ]:checked').val());
 	}
 
+	if($('input:radio[name=dorm-princ]:checked').val()) {
+		metros += parseFloat($('input:radio[name=pisos]:checked').val());
+	}
+
 	metros += parseFloat($('select[name=baño-toillete]').val());
 	metros += parseFloat($('select[name=baño-simple]').val());
 	metros += parseFloat($('select[name=baño-ante]').val());
@@ -76,12 +80,12 @@ var calcularValores = function() {
 	metros += parseFloat($('select[name=doble]').val());
 	metros += parseFloat($('select[name=lavadero]').val());
 	metros += parseFloat($('select[name=estudio]').val());
-	metros += parseFloat($('select[name=plantas]').val());
 	metros += parseFloat($('select[name=deposito]').val());
 	
 	metros = Math.round(metros);
 	
 	$('.resultado-text').html('Necesitas ' + metros +  ' metros cuadrados para tu casa!!');
+	$('.resultado-text2').show();	
 	$('.form').hide();
 	$('.text-calculadora').empty(); 
 	$('.resultado').show();

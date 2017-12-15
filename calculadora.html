@@ -43,7 +43,7 @@
       
       <ul class="menu-list right-boxed">
         <li class="active">
-            <a href="calculadora.html">Calcula tus metros<sup>2</sup></a>
+            <a href="calculadora.html">Calcula tu casa</a>
         </li>
         <li>
           <a  href="index.html">Home</a>
@@ -92,7 +92,7 @@
 
       <div class="navbar-spacer hidden-sm hidden-xs"></div>
 
-      <a class="navbar-link hidden-sm hidden-xs" href="calculadora.html"> Calcula tus metros<sup>2</sup></a>
+      <a class="navbar-link hidden-sm hidden-xs" href="calculadora.html"> Calcula tu casa</a>
       <a class="navbar-address hidden-sm hidden-xs" href="rrhh.html"> RRHH</a>
       <a class="navbar-address hidden-sm hidden-xs" href="contacto.html"> Contacto</a>
       <a class="navbar-address hidden-sm hidden-xs" href="obras.html"> Obras</a>
@@ -118,22 +118,15 @@
             </div>
           </div>
         </main>
-
+        <h1 class="resultado-text text-center"></h1>
+        <div ><h2 class="resultado-text2 text-center">¿Queres que la presupuestemos?<br>Dejanos tus datos y nos comunicamos con vos</h2></div>
         <div class="resultado text-center">
           <div>
-            <h1 class="resultado-text">  
-               
-            </h1>
-            <section class="section-message section">
+                       
+            <section class="section-message section calculadora-section">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-3">
-                    <div class="section-info">
-                      <div class="title-hr"></div>
-                      <div class="info-title">queremos contactarte y presupuestar tu casa</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9">
+                  <div class="col-md-12">
                     <form class="js-form">
                       <div class="row">
                         <div class="form-group col-sm-6 col-lg-4">
@@ -169,6 +162,7 @@
             <input class="radio-hide" id="six" type="radio" name="stage" />
             <input class="radio-hide" id="seven" type="radio" name="stage" />
             <input class="radio-hide" id="eight" type="radio" name="stage" />
+            <input class="radio-hide" id="nine" type="radio" name="stage" />
           
             <div class="stages">
               <label for="one">1</label>
@@ -179,6 +173,7 @@
               <label for="six">6</label>
               <label for="seven">7</label>
               <label for="eight">8</label>
+              <label for="nine">9</label>
             </div>
           
             <span class="progress-c"><span></span></span>
@@ -290,21 +285,26 @@
                   </div> 
               </div>
               <div data-panel="five">
-                  <h4>¿Garage para cuántos autos?</h4>
-                  <div class="col-lg-3 col-md-3 options text-center">
-                    <img alt="" src="images/calc/garage/garage1.png" class="img-responsive">
-                        <input class="" type="radio" name="garage" value="17.7" />
-                        Garage para 1 auto
+                  <h4>¿Garaje para cuántos autos?</h4>
+                  <div class="col-lg-2 col-md-2 options text-center">
+                      <img src="images/calc/garage/singarage.png" class="garage img-responsive">
+                      <input class="" type="radio" name="garage" value="0" />
+                      Sin Garaje                     
                   </div>
-                  <div class="col-lg-4 col-md-4 options text-center">
-                      <img src="images/calc/garage/garage2.png" class="img-responsive">
+                  <div class="col-lg-2 col-md-2 options text-center">
+                    <img alt="" src="images/calc/garage/garage1.png" class="garage img-responsive">
+                        <input class="" type="radio" name="garage" value="17.7" />
+                        Garaje
+                  </div>
+                  <div class="col-lg-3 col-md-3 options text-center">
+                      <img src="images/calc/garage/garage2.png" class="garage img-responsive">
                       <input class="" type="radio" name="garage" value="32.3" />
-                      Garage para 2 autos
+                      Garaje para 2 autos
                   </div>
                   <div class="col-lg-5 col-md-5 options text-center">
-                        <img src="images/calc/garage/garage3.png" class="img-responsive">
+                        <img src="images/calc/garage/garage3.png" class="garage img-responsive">
                         <input class="" type="radio" name="garage" value="46" />
-                        Garage para 3 autos                      
+                        Garaje para 3 autos                      
                   </div> 
               </div>
               <div data-panel="six">
@@ -351,7 +351,7 @@
                 <div data-panel="eight">
                     <h4>¿Que otros ambientes necesitas?</h4>
     
-                      <div class="col-lg-3 col-md-3 options text-center">
+                      <div class="col-lg-4 col-md-4 options text-center">
                             <img src="images/calc/otros/deposito.png" class="img-responsive">
                             Deposito <br>
                             <select name="deposito" form="calculadora-form">
@@ -363,7 +363,7 @@
                                                   
                       </div>
     
-                      <div class="col-lg-3 col-md-3 options text-center">
+                      <div class="col-lg-4 col-md-4 options text-center">
                         <img src="images/calc/otros/estudio.png" class="img-responsive">   
                         Estudio <br>                   
                         <select name="estudio" form="calculadora-form">
@@ -374,7 +374,7 @@
                           </select>
                             
                     </div>
-                    <div class="col-lg-3 col-md-3 options text-center">
+                    <div class="col-lg-4 col-md-4 options text-center">
                         <img src="images/calc/otros/lavadero.png" class="img-responsive">
                         Lavadero <br>
                         <select name="lavadero" form="calculadora-form">
@@ -386,18 +386,23 @@
                           
                     </div>
                     
-                    <div class="col-lg-3 col-md-3 options text-center">
-                        <img src="images/calc/otros/deposito.png" class="img-responsive">
-                        Plantas de tu casa      <br>
-                        <select name="plantas" form="calculadora-form">
-                            <option value="0">1</option>
-                            <option value="16">2</option>
-                            <option value="32">3</option>
-                          </select>
-                                        
-                    </div>
                     
                   </div>
+
+                  <div data-panel="nine">
+                      <h4>¿Cuantos pisos?</h4>
+                      <div class="col-lg-6 col-md-6 options text-center">
+                        <img alt="" src="images/calc/pisos/1piso.png" class="img-responsive">
+                            <input class="" type="radio" name="pisos" value="0" />
+                            1 Piso
+                      </div>
+                      <div class="col-lg-6 col-md-6 options text-center">
+                          <img alt="" src="images/calc/pisos/2pisos.png" class="img-responsive">
+                          <input class="" type="radio" name="pisos" value="16" />
+                          2 Pisos
+                      </div>  
+                    </div>
+
 
             </div>
             <div class="row text-center">
@@ -428,11 +433,13 @@
         </div>
         <div class="flex-item">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Estudio</a></li>
-            <li><a href="works-grid.html">Obras</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><a href="#">Presupuesto</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="obras.html">Obras</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="rrhh.html">RRHH</a></li>
+              <li><a href="calculadora.html">Calcula tu Casa</a></li>
           </ul> 
         </div>
         <div class="flex-item">
