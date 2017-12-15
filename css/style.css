@@ -1498,7 +1498,7 @@ a.brand:focus{
   top:0;
   width: 100.1%;
   height: 100%;
-  padding:4.85rem 3rem;
+  padding:1.5rem 3rem;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -1532,7 +1532,7 @@ a.brand:focus{
 .project-item:hover .project-hover .project-title{
   position: relative;
   color: #000;
-  bottom:2rem;
+  bottom:0.5rem;
   -webkit-transform: translateY(2rem);
   -ms-transform: translateY(2rem);
   -o-transform: translateY(2rem);
@@ -4525,6 +4525,7 @@ a.brand:focus{
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  image-orientation: from-image;
 }
 
 @media (max-width: 1800px){
