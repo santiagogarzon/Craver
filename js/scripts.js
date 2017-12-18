@@ -595,13 +595,22 @@
 
 	if ($('.js-form3').length) {
 		$('.js-form3').each(function(){
+			var m_data = new FormData();   
+            m_data.append( 'user_name', $('input[name=name]').val());
+            m_data.append( 'user_email', $('input[name=email]').val());
+            m_data.append( 'phone_number', $('input[name=phone]').val());
+            m_data.append( 'file_attach', $('input[name=file_attach]')[0].files[0]);
+		   
 			$(this).validate({
 				errorClass: 'error wobble-error',
 			    submitHandler: function(form){
 		        	$.ajax({
 			            type: "POST",
-			            url:"php/mail-contacto.php",
-			            data: $(form).serialize(),
+						url:"php/mail-presupuesto.php",
+						processData: false,
+						contentType: false,
+						data: m_data,
+						dataType: 'json',
 			            success: function() {
 		                	$('.success-message').show();
 		                },
