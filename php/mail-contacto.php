@@ -5,7 +5,7 @@ $subject = $_POST["subject"];
 $message = $_POST["message"];
 
 
-$EmailTo = "santiagogarzon04@gmail.com";
+$EmailTo = "info@craver.com.ar";
 $Title = "Nueva Consulta Web Page Craver";
 
 // prepare email body text
