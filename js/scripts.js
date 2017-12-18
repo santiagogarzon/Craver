@@ -591,10 +591,10 @@
 			    }
 			});
 		});
-	}
+	};
 
-	if ($('.js-form3').length) {
-		$('.js-form3').each(function(){
+	if ($('.js-form2').length) {
+		$('.js-form2').each(function(){
 			var m_data = new FormData();   
             m_data.append( 'user_name', $('input[name=name]').val());
             m_data.append( 'user_email', $('input[name=email]').val());
@@ -606,7 +606,7 @@
 			    submitHandler: function(form){
 		        	$.ajax({
 			            type: "POST",
-						url:"php/mail-presupuesto.php",
+						url:"php/mail-rrhh.php",
 						processData: false,
 						contentType: false,
 						data: m_data,
@@ -622,17 +622,17 @@
 			    }
 			});
 		});
-	}
+	};
 
 
-if ($('.js-form2').length) {
-	$('.js-form2').each(function(){
+if ($('.js-form3').length) {
+	$('.js-form3').each(function(){
 		$(this).validate({
 			errorClass: 'error wobble-error',
 			submitHandler: function(form){
 				$.ajax({
 					type: "POST",
-					url:"php/mail-rrhh.php",
+					url:"php/mail-presupuesto.php",
 					data: $(form).serialize(),
 					success: function() {
 						$('.success-message').show();
@@ -645,6 +645,6 @@ if ($('.js-form2').length) {
 			}
 		});
 	});
-}
+};
 
 })(jQuery);
