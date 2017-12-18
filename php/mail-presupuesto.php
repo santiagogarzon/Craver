@@ -9,7 +9,7 @@ $EmailTo = "santiagogarzon04@gmail.com";
 $Title = "Pedido de Presupuesto Web Page Craver";
 
 // prepare email body text
-$Fields .= "Se ha solicitado desde la Web Page Craver un presupuesto.\n Por favor contactarse con: \n Nombre: ";
+$Fields .= "Se ha solicitado desde la Web Page Craver un presupuesto.\n\nPor favor contactarse con:\n\nNombre: ";
 $Fields .= $name;
 $Fields .= "\n";
 
