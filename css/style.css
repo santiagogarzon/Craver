@@ -4185,6 +4185,16 @@ a.brand:focus{
 
 /* calculadora */
 
+.calc-banner {
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .calc-banner {
+    content: url("../images/banner-calculadora-mobile.png") !important;
+  }
+}
+
 @media (max-width: 600px) {
   .form .img-responsive {
     max-height: 7rem !important;
