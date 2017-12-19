@@ -27,7 +27,7 @@ $Fields .= "\n";
 
 
 // send email
-$success = mail($EmailTo,  $Title,  $Fields, "From:".$email);
+$success = mail($EmailTo,  $Title,  $Fields, "info@dnsprivado29.info");
 
 
 
