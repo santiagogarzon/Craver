@@ -5,7 +5,7 @@ $phone = $_POST["phone"];
 $message = $_POST["message"];
 
 
-$EmailTo = "info@craver.com.ar";
+$EmailTo = "sitiocraver@gmail.com";
 $Title = "Pedido de Presupuesto Web Page Craver";
 
 // prepare email body text
@@ -27,7 +27,7 @@ $Fields .= "\n";
 
 
 // send email
-$success = mail($EmailTo,  $Title,  $Fields, "info@dnsprivado29.info");
+$success = mail($EmailTo,  $Title,  $Fields);
 
 
 
