@@ -1,11 +1,11 @@
 <?php
-/* $name = $_POST["name"];
+$name = $_POST["name"];
 $email = $_POST["email"];
-$subject = $_POST["phone"];
-$message = $_POST["cv"];
+$phone = $_POST["phone"];
+$message = $_POST["message"];
 
 
-$EmailTo = "santiagogarzon04@gmail.com";
+$EmailTo = "sitiocraver@gmail.com";
 $Title = "Nueva Consulta para trabajar en Craver de la Web Page";
 
 // prepare email body text
@@ -18,7 +18,7 @@ $Fields .= $email;
 $Fields .= "\n";
 
 $Fields.= "Telefono: ";
-$Fields .= $subject;
+$Fields .= $phone;
 $Fields .= "\n";
 
 $Fields .= "CV: ";
@@ -27,9 +27,9 @@ $Fields .= "\n";
 
 
 // send email
-$success = mail($EmailTo,  $Title,  $Fields, "From:".$email); */
+$success = mail($EmailTo,  $Title,  $Fields, "From:".$email); 
 
-
+/* 
 if($_POST)
 {
     $to_email       = "santiagogarzon04@gmail.com"; //Recipient email, Replace with own email here
@@ -128,3 +128,4 @@ if($_POST)
     }
 }
 
+ */
